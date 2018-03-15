@@ -8,6 +8,9 @@ import csv
 import subprocess
 from datetime import datetime
 
+# Your student Google domain
+student_domain = "student.sgate.k12.mi.us"
+
 # Running log of GAM outputs
 log_file = "C:\Scripts\GAM-Student\log.txt"
 
@@ -36,7 +39,7 @@ for item in range(len(student_list)):
     student_username = segment[1]
     gam_string = 'gam update user "' \
                  + student_username \
-                 + '@student.sgate.k12.mi.us" password "' \
+                 + '@' + student_domain + '" password "' \
                  + student_password + '"\n'
     f_batch.write(gam_string)
 
