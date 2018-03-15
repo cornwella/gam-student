@@ -17,7 +17,7 @@ This can be edited on line `34`.
 Set your student's Google domain in the `student_domain` variable.
 
 ### Creating the Task Scheduler job
-Create your task at the desired time and interval (we run it M-F at 10PM, since our SIS sync runs at 8, giving it enough of a buffer. Point it at the Python executable, and give it the script's absolute path as parameter:
+Create your task at the desired time and interval (we run it M-F at 10PM, since our SIS sync runs at 8, giving it enough of a buffer). Point it at the Python executable, and give it the script's absolute path as parameter:
 
 ![configuring Task Scheduler for gam-student](https://i.imgur.com/Z41dL2W.jpg)
 
